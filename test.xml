@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Filter>
+	<MailServer name="Lars" host="imap.mail.yahoo.com" port="993" user="Lars.Seibert@yahoo.de" password="1304L@r$"/>
+	<Rules>
+		<Rule name="Xing3">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">xing.com</Condition>
+				<Condition field="to" criteria="contains">larseib-2017@yahoo.com</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="mark">read</Action>
+				<Action activity="delete" />
+			</Actions>
+		</Rule>
+		<Rule name="XIng2">
+			<Conditions all="true">
+				<Condition field="to" criteria="contains">larseib-xing@yahoo.de</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Soziale Netzwerke/Xing</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Poker">
+			<Conditions all="false">
+				<Condition field="from" criteria="contains">poker</Condition>
+				<Condition field="from" criteria="contains">Netbet</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/MyTrash/Poker</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Werbung">
+			<Conditions all="false">
+				<Condition field="from" criteria="contains">@itsco.de</Condition>
+				<Condition field="from" criteria="contains">hirmer-grosse</Condition>
+				<Condition field="from" criteria="contains">amazon</Condition>
+				<Condition field="from" criteria="contains">ebay</Condition>
+				<Condition field="from" criteria="contains">lidl</Condition>
+				<Condition field="from" criteria="contains">weingarten</Condition>
+				<Condition field="from" criteria="contains">udemy</Condition>
+				<Condition field="from" criteria="contains">notebooksbilliger</Condition>
+				<Condition field="from" criteria="contains">carwow</Condition>
+				<Condition field="from" criteria="contains">car2go</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Handel/Werbung</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Fax">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">faxout@pdf24.org</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Misc/Fax Versandbestätigung</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Jobs">
+			<Conditions all="false">
+				<Condition field="from" criteria="contains">Stepstone</Condition>
+				<Condition field="from" criteria="contains">Jobware</Condition>
+				<Condition field="from" criteria="contains">Experteer</Condition>
+				<Condition field="from" criteria="contains">JobNinja</Condition>
+				<Condition field="from" criteria="contains">Glassdoor</Condition>
+				<Condition field="from" criteria="contains">truffls</Condition>
+				<Condition field="from" criteria="contains">Gulp</Condition>
+				<Condition field="from" criteria="contains">Indeed</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Jobs</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Klette">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">Klette</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Misc/Klette</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Vengels">
+			<Conditions all="false">
+				<Condition field="from" criteria="contains">Vengels</Condition>
+				<Condition field="from" criteria="contains">Tilgner</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Misc/Vengels</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Lietzau">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">Klaus.Lietzau</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Finanzen/Lietzau</Action>
+			</Actions>
+		</Rule>
+		<Rule name="ebase">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">ebase.com</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Finanzen/eBase</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Barmenia">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">Barmenia</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Finanzen/Barmenia</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Finanzen">
+			<Conditions all="false">
+				<Condition field="from" criteria="contains">bhw</Condition>
+				<Condition field="from" criteria="contains">buhl.de</Condition>
+				<Condition field="from" criteria="contains">n26</Condition>
+				<Condition field="from" criteria="contains">auxmoney</Condition>
+				<Condition field="from" criteria="contains">Plus500</Condition>
+				<Condition field="from" criteria="contains">Selfinvest</Condition>
+				<Condition field="from" criteria="contains">paypal</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Finanzen</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Europa-Apothek">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">Apotheek</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Misc/Europa-Apotheek</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Sparkasse">
+			<Conditions all="false">
+				<Condition field="from" criteria="contains">Sparkasse</Condition>
+				<Condition field="from" criteria="contains">nispa.de</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Finanzen/Sparkasse</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Fidor">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">Fidor</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Finanzen/Fidor</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Strator">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">Strato</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Misc/Strato</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Trash-Werbung">
+			<Conditions all="false">
+				<Condition field="from" criteria="contains">Check24</Condition>
+				<Condition field="from" criteria="contains">tripz</Condition>
+				<Condition field="from" criteria="contains">Secret Escapes</Condition>
+				<Condition field="from" criteria="contains">Lottoland</Condition>
+				<Condition field="from" criteria="contains">groupon</Condition>
+				<Condition field="from" criteria="contains">news.happy-size.com</Condition>
+				<Condition field="from" criteria="contains">kinoheld.com</Condition>
+				<Condition field="from" criteria="contains">Wish.com</Condition>
+				<Condition field="from" criteria="contains">travelcircus</Condition>
+				<Condition field="from" criteria="contains">travelzoo</Condition>
+				<Condition field="from" criteria="contains">billiger-mietwagen</Condition>
+				<Condition field="from" criteria="contains">Douglas</Condition>
+				<Condition field="from" criteria="contains">Animod</Condition>
+				<Condition field="from" criteria="contains">Hotels.com</Condition>
+				<Condition field="from" criteria="contains">touridat</Condition>
+				<Condition field="from" criteria="contains">Handelsblatt</Condition>
+				<Condition field="from" criteria="contains">IKEA</Condition>
+				<Condition field="from" criteria="contains">Lotto24</Condition>
+				<Condition field="from" criteria="contains">Tipp24</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="mark">read</Action>
+				<Action activity="move">INBOX/Handel/Werbung</Action>
+			</Actions>
+		</Rule>
+		<Rule name="BlaBlaCar">
+			<Conditions all="true">
+				<Condition field="from" criteria="contains">@blablacar</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Soziale Netzwerke/BlaBlaCar</Action>
+			</Actions>
+		</Rule>
+		<Rule name="Facebook">
+			<Conditions all="false">
+				<Condition field="to" criteria="contains">larseib-facebook@yahoo.de</Condition>
+				<Condition field="to" criteria="contains">facebook</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Soziale Netzwerke/Facebook</Action>
+			</Actions>
+		</Rule>
+		<Rule name="LinkedIn">
+			<Conditions all="true">
+				<Condition field="to" criteria="contains">larseib-linkedin@yahoo.de</Condition>
+			</Conditions>
+			<Actions>
+				<Action activity="move">INBOX/Soziale Netzwerke/LinkedIn</Action>
+			</Actions>
+		</Rule>
+	</Rules>
+</Filter>
